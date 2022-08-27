@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
-    "lint": "next lint",
+    "lint": "eslint --fix --ext .js,.jsx .",
     "dev": "nodemon index.ts",
     "prepare": "husky install",
     "pre-commit": "lint-staged"
