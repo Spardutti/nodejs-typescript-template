@@ -15,9 +15,10 @@
     "noImplicitThis": true /* Enable error reporting when 'this' is given the type 'any'. */,
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "allowJs": true,
-    "noEmit": false,
+    "noEmit": true,
     "resolveJsonModule": true,
-    "incremental": true
+    "incremental": true,
+    "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
   "include": ["**/*.ts"]
 }
