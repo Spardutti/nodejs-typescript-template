@@ -19,6 +19,5 @@
     "resolveJsonModule": true,
     "incremental": true,
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
-  },
-  "include": ["**/*.ts"]
+  }
 }
