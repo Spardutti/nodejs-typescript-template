@@ -7,7 +7,7 @@
     "build": "npx tsc",
     "lint": "eslint",
     "dev": "nodemon index.ts",
-    "prepare": "husky install",
+    "prepare": "cd ../ && husky install ./server/.husky",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
