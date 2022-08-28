@@ -1,17 +1,10 @@
 import express from "express";
-import { Response } from "express";
-import dotenv from "dotenv";
+import { config } from "dotenv";
 
-dotenv.config();
-
-const helloYou = (name: any) => {
-    name = "you" || name;
-    console.log("hello" + name + "!");
-};
-
-
+config();
 
 const app = express();
+
 const port = process.env.PORT;
 
 app.get("/", (req, res) => {
