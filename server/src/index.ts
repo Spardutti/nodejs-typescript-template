@@ -1,5 +1,5 @@
 import { config } from "dotenv";
-// import express from "express";
+import express, { Request, Response } from "express";
 import logger from "morgan";
 import cookieParser from "cookie-parser";
 
@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 const port = process.env.PORT;
 
-app.get("/", (req, res) => {
+app.get("/", (req: Request, res: Response) => {
     res.send("Express + Ts Server");
 });
 
